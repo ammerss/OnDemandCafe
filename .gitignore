@@ -14,3 +14,5 @@ Project/\.idea/workspace\.xml
 Project/cmake-build-debug/cmake_install\.cmake
 
 Project/cmake-build-debug/
+
+Project/CMakeLists\.txt
