@@ -1,8 +1,8 @@
-#include<iostream>
+#include <iostream>
 #include <vector>
 #include <list>
 #include <string>
-#include<utility>
+#include <utility>
 using namespace std;
 
 
@@ -93,24 +93,24 @@ public:
 
 		while (exit) {
 
-			cout << "0.³ª°¡±â 1.Ä¿ÇÇ ÁÖ¹®ÇÏ±â"<< endl;
+			cout << "0.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1.Ä¿ï¿½ï¿½ ï¿½Ö¹ï¿½ï¿½Ï±ï¿½"<< endl;
 			cin >> exit;
 			if (exit) {
-				cout << "ÁÖ¹®ÇÒ Ä¿ÇÇ : " << endl;
+				cout << "ï¿½Ö¹ï¿½ï¿½ï¿½ Ä¿ï¿½ï¿½ : " << endl;
 				cin.getline(order, 1000000);
 
 			}
-			cout << "0.ÁÖ¹®¿Ï·á 1.Ãß°¡" << endl;
+			cout << "0.ï¿½Ö¹ï¿½ï¿½Ï·ï¿½ 1.ï¿½ß°ï¿½" << endl;
 			cin >> add;
 			if (add) {
 				add_content
 			}
-			cout << "Ä¿ÇÇ ÁÖ¹®:" << endl;
+			cout << "Ä¿ï¿½ï¿½ ï¿½Ö¹ï¿½:" << endl;
 			cin.getline(order, 1000000);
 			Coffee 
-			cout << "Ãß°¡ : " << endl;
+			cout << "ï¿½ß°ï¿½ : " << endl;
 			
-			cout << "ÀÌ¸§ ¸¸µé±â :" << endl;
+			cout << "ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ :" << endl;
 
 			
 
