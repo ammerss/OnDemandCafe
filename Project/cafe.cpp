@@ -15,14 +15,37 @@ public:
 	Ingredient(string n) :name(n) {
 		price = 0;
 	}
+	//Ingredient(string n, int p) :name(n), price(p) {};
+
 	string  getname() {
 		return name;
 	}
+	void setprice(int n) {
+		price = n;
+	}
+	int getprice() {
+		return price;
+	}
 	
+};
+class Inventory {
+	list<Ingredient> i;
+	list<Ingredient>::iterator it;
+public:
+	void add_i(Ingredient c) {
+		i.push_back(c);
+	}
+	Ingredient search(string a) {
+		for (it = i.begin(); it != i.end(); ++it) {
+			Ingredient temp = *it;
+			if (temp.getname() == a)
+				return temp;
+		}
+	}
 };
 class Coffee {
 	string name;
-	vector<pair<Ingredient, int>> content;
+	vector<pair<Ingredient, int>> content; //¾×Ã¼·ù
 	vector<Ingredient>topping;
 public:
 	Coffee() {}
@@ -36,23 +59,25 @@ public:
 		for (int i = 0; i < content.size(); i++) {
 			cout << content[i].first.getname() << content[i].second << " ";
 		}
-		for (int i = 0; i < topping.size(); i++) {
+		for (int i = 0; i <  topping.size(); i++) {
 			cout << topping[i].getname() << " ";
 		}
 	}
 	int getprice() {
-
+		Ingredient temp;
+		Inventory *stock;
+		int sum = 0;
+		for (int i = 0; i < content.size(); i++) {
+			cout << content[i].first.getname() << content[i].second << " ";
+			//temp = temp->search(content[i].first.getname()).getprice;
+			temp = stock->search(content[i].first.getname());
+			sum += temp.getprice();
+		}
+		return sum;
 	}
 };
 
-class Inventory {
-	list<Ingredient> i;
 
-public:
-	void add_i(Ingredient c) {
-		i.push_back(c);
-	}
-};
 class Syrup :public Ingredient{
 
 };
@@ -126,6 +151,7 @@ int main() {
 	Coffee c("americano");
 	Ingredient ing("water");
 	c.add_content(ing, 90);
+
 	Menu menu;
 	menu.add_menu(c);
 	
