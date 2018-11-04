@@ -18,3 +18,5 @@ Project/cmake-build-debug/
 Project/CMakeLists\.txt
 
 Project/\.idea/
+
+\.DS_Store
