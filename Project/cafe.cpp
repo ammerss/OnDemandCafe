@@ -45,7 +45,7 @@ public:
 };
 class Coffee {
 	string name;
-	vector<pair<Ingredient, int>> content; //��ü��
+	vector<pair<Ingredient, int>> content; //��ü��
 	vector<Ingredient>topping;
 public:
 	Coffee() {}
@@ -118,24 +118,24 @@ public:
 
 		while (exit) {
 
-			cout << "0.������ 1.Ŀ�� �ֹ��ϱ�"<< endl;
+			cout << "0.나가기 1.커피 주문하기"<< endl;
 			cin >> exit;
 			if (exit) {
-				cout << "�ֹ��� Ŀ�� : " << endl;
+				cout << "주문할 커피 : " << endl;
 				cin.getline(order, 1000000);
 
 			}
-			cout << "0.�ֹ��Ϸ� 1.�߰�" << endl;
+			cout << "0.주문완료 1.추가" << endl;
 			cin >> add;
 			if (add) {
 				add_content
 			}
-			cout << "Ŀ�� �ֹ�:" << endl;
+			cout << "커피 주문 :" << endl;
 			cin.getline(order, 1000000);
 			Coffee 
-			cout << "�߰� : " << endl;
+			cout << "추가 : " << endl;
 			
-			cout << "�̸� ����� :" << endl;
+			cout << "이름 만들기 :" << endl;
 
 			
 
